@@ -12,7 +12,7 @@ persona_02 = "Kevin"
 edad_02 = 41
 
 # COMPLETAR - INICIO
-
+comparar_nombre_y_edad = (persona_01==persona_02) and (edad_01!=edad_02)
 # COMPLETAR - FIN
 
 assert comparar_nombre_y_edad
@@ -28,7 +28,7 @@ marca_del_auto = "Chevrolet"
 modelo_de_auto = 1998
 
 # COMPLETAR - INICIO
-
+comparar_marca_y_modelo = (marca_del_auto != "Ford") and (modelo_de_auto<=2000)
 # COMPLETAR - FIN
 
 assert comparar_marca_y_modelo
@@ -46,7 +46,7 @@ superficie_de_campo_02 = 851212
 superficie_de_campo_03 = 8512
 
 # COMPLETAR - INICIO
-
+comparar_superficie = (superficie_de_campo_01 < superficie_de_campo_02 > superficie_de_campo_03)
 # COMPLETAR - FIN
 
 assert comparar_superficie
@@ -54,9 +54,14 @@ assert comparar_superficie
 
 """
 Construir una expresión lógica que use TODAS las variables y cuyo resultado sea
-True si la cantidad de bananas es menor a la mitad de la cantidad de naranjas,
+True si
+
+ la cantidad de bananas es menor a la mitad de la cantidad de naranjas,
+
 la mitad de naranjas es menor a dos veces la cantidad de manzanas y dos veces
 la cantidad de manzanas es menor o igual a la cantidad de peras al cuadrado.
+
+
 Restricción: Utilizar comparaciones encadenadas y no utilizar and, or ni not.
 """
 
@@ -66,7 +71,7 @@ manzanas = 300
 peras = 30
 
 # COMPLETAR - INICIO
-
+comparar_frutas = (bananas < naranjas/2 < manzanas*2 <= peras**2)
 # COMPLETAR - FIN
 
 assert comparar_frutas
