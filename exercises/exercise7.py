@@ -2,13 +2,15 @@
 
 
 """
-A partir de ls siguiente lista instanciar una tupla que contenga todos sus valores
+A partir de las siguiente lista instanciar una tupla que contenga todos sus valores
 y en el mismo orden.
 """
 
 lista = ["casa", "perro", "pato", "gato"]
 
 # COMPLETAR - INICIO
+
+tupla=(lista[0], lista[1], lista[2], lista[3]) #anda que se yo
 
 # COMPLETAR - FIN
 
@@ -23,7 +25,8 @@ y en el mismo orden.
 tupla = "casa", "perro", "pato", "gato", "tenedor"
 
 # COMPLETAR - INICIO
-
+lista=[]
+lista.extend(tupla[0:])
 # COMPLETAR - FIN
 
 assert lista == ["casa", "perro", "pato", "gato", "tenedor"]
@@ -32,11 +35,10 @@ assert lista == ["casa", "perro", "pato", "gato", "tenedor"]
 """
 Desempaquetar la siguiente tupla en las variables a, b y c
 """
-
 tupla = ("primer", 25, [1, 2, 3])
 
 # COMPLETAR - INICIO
-
+a, b, c = tupla
 # COMPLETAR - FIN
 
 assert a == "primer" and b == 25 and c == [1, 2, 3]
@@ -49,6 +51,12 @@ Desempaquetar la siguiente tupla y luego sumar sus valores
 tupla = (87, 98, 35, 67, 4, 9)
 
 # COMPLETAR - INICIO
+
+listacualquiera=[]
+listacualquiera.extend(tupla[:])
+total=0.0
+for x in range(len(listacualquiera)):
+    total+=listacualquiera[x]
 
 # COMPLETAR - FIN
 
@@ -63,6 +71,8 @@ Restricción: Utilizar f-Strings.
 lista = ["esta", "mañana", "sali", "a", "correr"]
 
 # COMPLETAR - INICIO
+a,b,c,d,e=lista
+string_concatenado=f"{a} {b} {c} {d} {e}"
 
 # COMPLETAR - FIN
 
@@ -77,7 +87,7 @@ Restricción: Utilizar desempaquetado con comodines
 tupla = (73, 45, 344, 3434, 2)
 
 # COMPLETAR - INICIO
-
+primer,*rest=tupla
 # COMPLETAR - FIN
 
 assert primer == 73
@@ -91,6 +101,9 @@ Restricción: Utilizar desempaquetado con comodines
 lista = [73, 45, 344, 3434, 2]
 
 # COMPLETAR - INICIO
+
+primer, *rest,  ultimo=lista
+suma=primer+ultimo
 
 # COMPLETAR - FIN
 
@@ -106,6 +119,10 @@ Restricción: Utilizar desempaquetado con comodines y f-Strings
 tupla = ("anoche", "fui", "a", "la", "fiesta", "pero", "no", "pude", "entrar")
 
 # COMPLETAR - INICIO
+
+a, b, c, d, e, *resto=tupla
+
+string_concatenado = f"{a} {b} {c} {d} {e}"
 
 # COMPLETAR - FIN
 

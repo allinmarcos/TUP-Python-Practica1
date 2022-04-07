@@ -11,6 +11,15 @@ Definir un diccionario para un 'Cliente' que contenga los siguiente valores:
 
 # COMPLETAR - INICIO
 
+Cliente={
+    
+    "Nombre":"Mario Pedernera",
+    "DNI" : 56895632,
+    "Domicilio" : "Los alamos 4509",
+    "Compras" : ["cafetera", "TV 50 pulgadas", "mouse gamer"],
+
+}
+
 # COMPLETAR - FIN
 
 assert (
@@ -30,10 +39,20 @@ Definir un diccionario para las 'Compras' que contenga los siguiente valores:
 
 # COMPLETAR - INICIO
 
+Compras={
+    
+    "Mario Pedernera" : ["cafetera", "TV 50 pulgadas", "mouse gamer"],
+    "Ezequiel Castello" : ["ipad", "ipod", "iphone"],
+    "Pablo Piristrelli" : ["Reproductor de CD", "Videograbadora"],
+
+}
+
+
+
 # COMPLETAR - FIN
 
 assert (
-    (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgads", "mouse gamer"])
+    (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgadas", "mouse gamer"])
     and (Compras["Ezequiel Castello"] == ["ipad", "ipod", "iphone"])
     and (Compras["Pablo Piristrelli"] == ["Reproductor de CD", "Videograbadora"])
 )
@@ -53,10 +72,11 @@ diccionario = {
 
 # COMPLETAR - INICIO
 
+clave1= diccionario.get("clave1")
+
 # COMPLETAR - FIN
 
 assert clave1 == 234
-
 
 """
 Dado el siguiente diccionario forzar la obtención de un valor por defecto igual a 5 utilizando
