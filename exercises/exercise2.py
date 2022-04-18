@@ -63,7 +63,8 @@ variable_04 = "90"
 variable_05 = 100
 
 # COMPLETAR - INICIO
-80= #mecanismo de cortocircuito???
+resultado=variable_03 or variable_05/0 and variable_01 and variable_04 and variable_02
+
 # COMPLETAR - FIN
 
 assert resultado == 80
